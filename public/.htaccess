@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d [OR]
+RewriteCond %{REQUEST_URI} (.js|.css|.gif|.png|.jpg|.jpeg)
+RewriteRule ^.*$ - [NC,L]
+RewriteRule ^(.*)$ index.php/$1 [NC,L]
+

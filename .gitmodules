@@ -1,0 +1,6 @@
+[submodule "limepie"]
+	path = limepie
+	url = git@github.com:yejune/limepie.git
+[submodule "app/vendor/PHPExcel"]
+	path = app/vendor/PHPExcel
+	url = https://github.com/PHPOffice/PHPExcel.git

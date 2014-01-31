@@ -1,0 +1,71 @@
+/*!
+ *  Font Awesome 3.0.2
+ *  the iconic font designed for use with Twitter Bootstrap
+ *  -------------------------------------------------------
+ *  The full suite of pictographic icons, examples, and documentation
+ *  can be found at: http://fortawesome.github.com/Font-Awesome/
+ *
+ *  License
+ *  -------------------------------------------------------
+ *  - The Font Awesome font is licensed under the SIL Open Font License - http://scripts.sil.org/OFL
+ *  - Font Awesome CSS, LESS, and SASS files are licensed under the MIT License -
+ *    http://opensource.org/licenses/mit-license.html
+ *  - The Font Awesome pictograms are licensed under the CC BY 3.0 License - http://creativecommons.org/licenses/by/3.0/
+ *  - Attribution is no longer required in Font Awesome 3.0, but much appreciated:
+ *    "Font Awesome by Dave Gandy - http://fortawesome.github.com/Font-Awesome"
+
+ *  Contact
+ *  -------------------------------------------------------
+ *  Email: dave@davegandy.com
+ *  Twitter: http://twitter.com/fortaweso_me
+ *  Work: Lead Product Designer @ http://kyruus.com
+ *
+ * Modify css for use simple by Song Hyo-Jin (shj at xenosi.de)
+ * http://framework.xenosi.de/fontawesome.php
+ */
+@font-face {
+	font-family: 'FontAwesome';
+		src: url('./source/fortawesome/font/fontawesome-webfont.eot?v=3.0.1');
+		src: url('./source/fortawesome/font/fontawesome-webfont.eot?#iefix&v=3.0.1') format('embedded-opentype'),
+			url('./source/fortawesome/font/fontawesome-webfont.woff?v=3.0.1') format('woff'),
+			url('./source/fortawesome/font/fontawesome-webfont.ttf?v=3.0.1') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+.faicon, .faicon-spin {
+	font-family:FontAwesome;
+	-moz-font-smoothing:antialiased;
+	-webkit-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	-ms-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	speak:none;
+}
+.faicon-spin {
+	display:inline-block;
+	-moz-animation:faspin 2s infinite linear;
+	-webkit-animation:faspin 2s infinite linear;
+	-o-animation:faspin 2s infinite linear;
+	-ms-animation:faspin 2s infinite linear;
+	animation:faspin 2s infinite linear;
+}
+@-moz-keyframes faspin {
+  0% { -moz-transform: rotate(0deg); }
+  100% { -moz-transform: rotate(359deg); }
+}
+@-webkit-keyframes faspin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(359deg); }
+}
+@-o-keyframes faspin {
+  0% { -o-transform: rotate(0deg); }
+  100% { -o-transform: rotate(359deg); }
+}
+@-ms-keyframes faspin {
+  0% { -ms-transform: rotate(0deg); }
+  100% { -ms-transform: rotate(359deg); }
+}
+@keyframes faspin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(359deg); }
+}

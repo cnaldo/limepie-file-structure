@@ -1,0 +1,78 @@
+;<?php/*
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; real zone ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[production\master]
+dsn = "mysql:host=localhost;dbname=mydbname;charset=utf8"
+username = ""
+password = ""
+charset = "utf8"
+
+[production\master2]
+dsn = "mysql:host=localhost;dbname=mydbname;charset=utf8"
+username = ""
+password = ""
+charset = "utf8"
+
+[production\slave]
+dsn = "mysql:host=localhost;dbname=mydbname;charset=utf8"
+username = ""
+password = ""
+charset = "utf8"
+
+
+
+=======
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; sync zone ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[sync\master]
+dsn = "mysql:host=localhost;dbname=limepie;charset=utf8"
+username = "limepie"
+password = ""
+charset = "utf8"
+
+[sync\slave]
+dsn = "mysql:host=localhost;dbname=limepie;charset=utf8"
+username = "limepie"
+password = ""
+charset = "utf8"
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; testing zone ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[testing\master]
+dsn = "mysql:host=localhost;dbname=limepie;charset=utf8"
+username = ""
+password = ""
+charset = "utf8"
+
+[testing\slave]
+dsn = "mysql:host=localhost;dbname=limepie;charset=utf8"
+username = ""
+password = ""
+charset = "utf8"
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; dev zone ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[development\master]
+dsn = "mysql:host=localhost;dbname=mydbname;charset=utf8"
+username = ""
+password = ""
+charset = "utf8"
+
+[development\master2]
+dsn = "mysql:host=localhost;dbname=mydbname;charset=utf8"
+username = ""
+password = ""
+charset = "utf8"
+
+[development\slave]
+dsn = "mysql:host=localhost;dbname=mydbname;charset=utf8"
+username = ""
+password = ""
+charset = "utf8"
+
+
+;*/?>
