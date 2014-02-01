@@ -10,9 +10,12 @@ class listController extends baseController
 	public function indexAction()
 	{
 
-		return layout\front::btype(array(
+		layout::set(array(
 			'postId'	=> 'post id : 234234'
 			,'data'		=> array()
+		));
+		return layout\front::btype(array(
+			'layout' => 'index.phtml'
 		));
 	}
 }

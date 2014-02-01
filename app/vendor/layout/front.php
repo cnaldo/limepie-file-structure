@@ -5,36 +5,30 @@ use app\vendor\layout as layout;
 
 class front extends layout 
 {
-	public static function atype($assign = array()) 
+	public static function atype($define = array()) 
 	{
-		self::assign($assign);
-
-		self::define(array(
+		parent::define(array(
 			'doctype'	=> self::layoutDir('atype/doctype.phtml'),
-			'layout'	=> self::viewDir('index.phtml')
 		));
-		return self::display();
+		parent::define($define);
+		return parent::display();
 	}
-	public static function btype($assign = array()) 
+	public static function btype($define = array()) 
 	{
-		self::assign($assign);
-
-		self::define(array(
+		parent::define(array(
 			'doctype'	=> self::layoutDir('btype/doctype.phtml'),
 			'sidebar'	=> self::layoutDir('btype/sidebar.phtml'),
-			'layout'	=> self::viewDir('index.phtml')
 		));
-		return self::display();
+		parent::define($define);
+		return parent::display();
 	}
-	public static function ctype($assign = array()) 
+	public static function ctype($define = array()) 
 	{
-		self::assign($assign);
-
-		self::define(array(
+		parent::define(array(
 			'doctype'	=> self::layoutDir('ctype/doctype.phtml'),
-			'layout'	=> self::viewDir('index.phtml')
 		));
-		return self::display();
+		parent::define($define);
+		return parent::display();
 	}
 	public static function layoutDir($file) 
 	{

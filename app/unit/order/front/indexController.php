@@ -10,10 +10,12 @@ class indexController extends baseController
 	public function indexAction()
 	{
 
-		return layout\front::atype(array(
+		layout::set(array(
 			'postId'	=> 'post id : 234234'
 			,'data'		=> array()
-			,'a'		=> 'test'
+		));
+		return layout\front::atype(array(
+			'layout' => 'index.phtml'
 		));
 	}
 }

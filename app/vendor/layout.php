@@ -6,8 +6,9 @@ class layout
 {
 	public static function display($print = false) 
 	{
-		$tpl = new \limepie\tpl;
-
+		$tpl			= new \limepie\tpl;
+		$tpl->tpl_path	= __CONTROLLER_DIR__;
+		$tpl->skin		= 'views';
 		$tpl->define(space::name('template_define')->getAttributes());
 		$tpl->assign(space::name('template')->getAttributes());
 		

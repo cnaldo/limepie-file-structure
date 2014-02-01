@@ -5,15 +5,13 @@ use app\vendor\layout as layout;
 
 class admin extends layout 
 {
-	public static function atype($assign = array()) 
+	public static function atype($define = array()) 
 	{
-		self::assign($assign);
-
-		self::define(array(
+		parent::define(array(
 			'doctype'	=> self::layoutDir('doctype.phtml'),
-			'layout'	=> self::viewDir('index.phtml')
 		));
-		return self::display();
+		parent::define($define);
+		return parent::display();
 	}
 	public static function layoutDir($file) 
 	{
