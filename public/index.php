@@ -21,7 +21,7 @@ try {
 	$router->setControllerSuffix("Controller");
 	$router->setActionSuffix("Action");
 	$router->setAccessByDomain(array(
-		'front'
+		'front' // first, default
 		,'back'
 		,'mng'
 		,'partner'
