@@ -3,9 +3,9 @@
 namespace app\unit\order\front;
 
 use \app\vendor\layout as layout;
-use \app\unit\order\front\baseController as baseController;
+use \app\unit\order\frontController as frontController;
 
-class indexController extends baseController 
+class indexController extends frontController 
 {
 	public function indexAction()
 	{
@@ -15,7 +15,7 @@ class indexController extends baseController
 			,'data'		=> array()
 		));
 		return layout\front::atype(array(
-			'layout' => 'index.phtml'
+			'contents' => 'index.phtml'
 		));
 	}
 }

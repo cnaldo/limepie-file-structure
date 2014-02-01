@@ -1,12 +1,15 @@
 <?php
+
 namespace app\vendor;
+
 use \limepie\space as space;
+use \limepie\tpl as tpl;
 
 class layout 
 {
 	public static function display($print = false) 
 	{
-		$tpl			= new \limepie\tpl;
+		$tpl			= new tpl;
 		$tpl->tpl_path	= __CONTROLLER_DIR__;
 		$tpl->skin		= 'views';
 		$tpl->define(space::name('template_define')->getAttributes());
