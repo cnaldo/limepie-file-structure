@@ -11,7 +11,7 @@ class front extends layout
 			'doctype'	=> self::layoutDir('atype/doctype.phtml'),
 		));
 		parent::define($define);
-		return parent::display();
+		parent::display(true);
 	}
 	public static function btype($define = array()) 
 	{
@@ -20,7 +20,7 @@ class front extends layout
 			'sidebar'	=> self::layoutDir('btype/sidebar.phtml'),
 		));
 		parent::define($define);
-		return parent::display();
+		parent::display(true);
 	}
 	public static function ctype($define = array()) 
 	{
@@ -28,7 +28,7 @@ class front extends layout
 			'doctype'	=> self::layoutDir('ctype/doctype.phtml'),
 		));
 		parent::define($define);
-		return parent::display();
+		parent::display(true);
 	}
 	public static function layoutDir($file) 
 	{

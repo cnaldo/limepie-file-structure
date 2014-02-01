@@ -7,7 +7,7 @@ use \limepie\tpl as tpl;
 
 class layout 
 {
-	public static function display($print = false) 
+	public static function display($display = true) 
 	{
 		$tpl			= new tpl;
 		$tpl->tpl_path	= __CONTROLLER_DIR__;
@@ -15,7 +15,7 @@ class layout
 		$tpl->define(space::name('template_define')->getAttributes());
 		$tpl->assign(space::name('template')->getAttributes());
 		
-		return $tpl->display('doctype', $print);			
+		return $tpl->display('doctype', $display);
 	}
 	public static function assign($arg = array(), $val = null) 
 	{

@@ -14,7 +14,7 @@ class indexController extends frontController
 			'postId'	=> 'post id : 234234'
 			,'data'		=> array()
 		));
-		return layout\front::atype(array(
+		layout\front::atype(array(
 			'contents' => 'index.phtml'
 		));
 	}

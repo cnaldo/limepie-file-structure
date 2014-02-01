@@ -14,7 +14,7 @@ class listController extends frontController
 			'postId'	=> 'post id : 234234'
 			,'data'		=> array()
 		));
-		return layout\front::btype(array(
+		layout\front::btype(array(
 			'contents'	=> 'sublayout.phtml'
 			, 'content'	=> 'index.phtml'
 		));
