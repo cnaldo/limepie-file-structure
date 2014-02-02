@@ -3,13 +3,13 @@
 namespace app\vendor;
 
 use \limepie\space as space;
-use \limepie\tpl as tpl;
+use \limepie\view as view;
 
 class layout 
 {
 	public static function display($display = true) 
 	{
-		$tpl			= new tpl;
+		$tpl			= new view;
 		$tpl->tpl_path	= __CONTROLLER_DIR__;
 		$tpl->skin		= 'views';
 		$tpl->define(space::name('template_define')->getAttributes());
