@@ -1,6 +1,6 @@
 [submodule "app/vendor/PHPExcel"]
 	path = app/vendor/PHPExcel
-	url = https://github.com/PHPOffice/PHPExcel.git
+	url = git@github.com:PHPOffice/PHPExcel.git
 [submodule "limepie"]
 	path = limepie
 	url = git@github.com:yejune/limepie.git
